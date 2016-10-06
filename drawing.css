@@ -1,7 +1,9 @@
 #wrapper {
 	width: 960px;
+	height: 960px;
 }
 
 .unit {
-	display: inline;
+	display: inline-block;
+	width = 30;
 }
