@@ -2,6 +2,10 @@ $(document).ready(function(){
 	console.log("Hello");
 	makeGrid(16);
 
+	//All units will change color when hovered over
+	$('.unit').hover(function(){
+		$(this).addClass("paintedUnit");
+	});
 });
 
 //Fill the wrapper with a grid of n divs

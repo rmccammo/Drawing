@@ -5,5 +5,8 @@
 
 .unit {
 	display: inline-block;
-	width = 30;
+}
+
+.paintedUnit {
+	background-color: black;
 }
