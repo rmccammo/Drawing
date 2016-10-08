@@ -2,9 +2,13 @@ $(document).ready(function(){
 	console.log("Hello");
 	makeGrid(16);
 
-	//All units will change color when hovered over
-	$('.unit').hover(function(){
-		$(this).addClass("paintedUnit");
+
+
+	//When the reset button is clicked, clear the wrapper and
+	//make a new grid
+	$('#resetButton').click(function(){
+		$('#wrapper').empty();
+		makeGrid(16);
 	});
 });
 
@@ -22,5 +26,10 @@ function makeGrid(n){
 
 	var size = 960/n;
 	$(".unit").width(size).height(size);
+	
+	//All units will change color when hovered over
+	$('.unit').hover(function(){
+		$(this).addClass("paintedUnit");
+	});
 
 }
